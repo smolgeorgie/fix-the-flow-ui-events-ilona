@@ -51,3 +51,18 @@ let flipElement = document.querySelector('a:nth-of-type(8)');
 flipElement.addEventListener('click', function () {
   this.classList.add('flipHoriBot');
 });
+
+
+// SWIRL OUT
+let swirlElement = document.querySelector('a:nth-of-type(9)');
+
+swirlElement.addEventListener('click', function () {
+  this.classList.add('swirlOut');
+});
+
+// JELLO HORIZONTAL
+let jelloElement = document.querySelector('a:nth-of-type(10)');
+
+jelloElement.addEventListener('click', function () {
+  this.classList.add('jelloHorizontal');
+});
