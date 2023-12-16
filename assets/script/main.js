@@ -19,6 +19,7 @@ function shakeHandler() {
   interactionShake.classList.toggle('shake')
 }
 
+
 // PULSE SCALE
 const button = document.querySelector('a:nth-of-type(6)');
 const initialSize = button.offsetWidth;
@@ -45,6 +46,7 @@ function startPulsing() {
 
 button.addEventListener('click', startPulsing);
 
+
 // FLIP HORIZONTAL
 let flipElement = document.querySelector('a:nth-of-type(8)');
 
@@ -60,9 +62,37 @@ swirlElement.addEventListener('click', function () {
   this.classList.add('swirlOut');
 });
 
+
 // JELLO HORIZONTAL
 let jelloElement = document.querySelector('a:nth-of-type(10)');
 
 jelloElement.addEventListener('click', function () {
   this.classList.add('jelloHorizontal');
+});
+
+
+// ROLL OUT ANIMATION
+let rollElement = document.querySelector('a:nth-of-type(11)');
+
+rollElement.addEventListener('click', function () {
+  this.classList.add('rollOut');
+});
+
+
+// SLIDE OUT ANIMATION
+let slideElement = document.querySelector('a:nth-of-type(13)');
+
+slideElement.addEventListener('click', function () {
+  this.classList.add('slideOut');
+});
+
+
+// UNCLICKABLE BUTTON
+let unclickableButton = document.querySelector('a:nth-of-type(15)');
+
+unclickableButton.addEventListener('click', () => alert('You cannot click me!'));
+
+unclickableButton.addEventListener('mouseover', () => {
+  unclickableButton.style.left = Math.random() * 100 + '%';
+  unclickableButton.style.top = Math.random() * 100 + '%';
 });
