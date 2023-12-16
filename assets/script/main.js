@@ -44,3 +44,10 @@ function startPulsing() {
 }
 
 button.addEventListener('click', startPulsing);
+
+// FLIP HORIZONTAL
+let flipElement = document.querySelector('a:nth-of-type(8)');
+
+flipElement.addEventListener('click', function () {
+  this.classList.add('flipHoriBot');
+});
